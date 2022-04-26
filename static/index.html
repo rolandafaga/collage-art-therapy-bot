@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="utf-8">
+	 <title>Collage Art Therapy Bot</title>
+	 <link rel="stylesheet" href="./assets/index.css" />
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="tile">
+		<h3>Upload your own images</h3>
+		<input type="file" id="files" name="files[]" multiple class="form-control"/>
+	</div>
+	
+	<div class="tile">
+		<h3>Choose one of the images below</h3>
+		<img class="gallery" id="image_option_1" src=""></img>
+		<img class="gallery" id="image_option_2" src=""></img>
+		<img class="gallery" id="image_option_3" src=""></img>
+	</div>
+	
+	<h1>Your Collage</h1>
+
+	<div class="container my-5" id="canvas">
+		<div id="collage"></div>
+	</div>	
+
+	<!-- Description Pop Up -->
+	<div id="myModal" class="modal">
+		<div class="modal-content">
+			<div class="modal-header">
+				<span class="close">&times;</span>
+				<h2 id="selected-img-label"></h2>
+			</div>
+			<div class="modal-body">
+				<img id="selected-img" src=""></img>
+				<div>
+					<label for="fname">How would you describe this image?</label><br>
+					<textarea name="fname" id="selected-img-desc"></textarea>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button id="modal-save"> Save </button>
+			</div>
+		</div>
+	</div>
+	
+	<script type="module" src="./assets/scripts/script.js"></script>
+</body>

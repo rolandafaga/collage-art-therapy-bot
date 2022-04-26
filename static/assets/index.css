@@ -1,0 +1,175 @@
+body {
+       font-family: 'Montserrat', sans-serif;
+       margin: 5em;
+}
+
+textarea {
+       resize: none;
+       width: 100%;
+       height: 4em;
+}
+
+label {
+       display: inline-block;
+       vertical-align: top;
+       margin-bottom: 1em;
+}
+
+.tile {
+       margin: 20px 0px;
+}
+
+.gallery {
+       width: 20em;
+}
+
+#canvas {
+       line-height: 0;
+       -webkit-column-count: 4;
+       -webkit-column-gap: 0px;
+       -moz-column-count: 4;
+       -moz-column-gap: 0px;
+       column-count: 4;
+       column-gap: 0px;  
+       border-radius: 30px;
+       border: 5px solid #0FA3B1;
+       
+       position: static;
+       overflow: hidden;
+}
+
+#canvas img {
+       width: 100% !important;
+       height: auto !important;
+       position: static;
+       overflow: hidden;
+}
+
+.remove {
+       position: relative;
+       color: transparent;
+       float: right;
+       font-size: 28px;
+       font-weight: bold;
+       top: 0.4em;
+       right: 0.4em;
+}
+
+.remove:hover, .remove:focus {
+       color: white;
+       text-decoration: none;
+       cursor: pointer;
+}
+
+::-webkit-file-upload-button, button {
+       background: #0FA3B1;
+       padding: 1em;
+       border-radius: 30px;
+       cursor: pointer;
+       width: 10em;
+       margin-right: 1em;
+}
+
+input[type='file'] {
+       color: transparent;
+}
+
+/* The Modal (background) */
+.modal {
+       display: none; /* Hidden by default */
+       position: fixed; /* Stay in place */
+       z-index: 1; /* Sit on top */
+       left: 0;
+       top: 0;
+       width: 100%; /* Full width */
+       height: 100%; /* Full height */
+       overflow: auto; /* Enable scroll if needed */
+       background-color: rgb(0,0,0); /* Fallback color */
+       background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+       -webkit-animation-name: fadeIn; /* Fade in the background */
+       -webkit-animation-duration: 0.4s;
+       animation-name: fadeIn;
+       animation-duration: 0.4s
+}
+
+/* Modal Content */
+.modal-content {
+       position: fixed;
+       bottom: 0;
+       background-color: #fefefe;
+       width: 100%;
+       -webkit-animation-name: slideIn;
+       -webkit-animation-duration: 0.4s;
+       animation-name: slideIn;
+       animation-duration: 0.4s
+}
+
+/* The Close Button */
+.close {
+       position: relative;
+       color: white;
+       float: right;
+       font-size: 28px;
+       font-weight: bold;
+}
+
+.close:hover, .close:focus {
+       color: #000;
+       text-decoration: none;
+       cursor: pointer;
+}
+
+.modal-header {
+       padding: 2px 16px;
+       background-color: #0FA3B1;
+       color: white;
+}
+
+.modal-body {
+       display: flex;
+       padding: 40px 30px;
+}
+
+       .modal-body > img {
+              width: 300px;
+       }
+       .modal-body > div {
+              padding-left: 2em;
+              width: 100%;
+       }
+
+.modal-footer {
+       padding: 2px 16px;
+       background-color: #0FA3B1;
+       color: white;
+}
+
+       .modal-footer > button {
+              background-color: #F7A072;
+              margin: 1em 0;
+              width: 50%;
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+       }
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+       from {bottom: -300px; opacity: 0} 
+       to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+       from {bottom: -300px; opacity: 0}
+       to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+       from {opacity: 0} 
+       to {opacity: 1}
+}
+
+@keyframes fadeIn {
+       from {opacity: 0} 
+       to {opacity: 1}
+}

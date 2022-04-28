@@ -21,9 +21,9 @@ $(document).ready(function() {
 	}
 	
 	// Initializing the first three image options on page load
-	document.getElementById("image_option_1").src = "assets/images/" + getRandomImage(0);
-	document.getElementById("image_option_2").src = "assets/images/" + getRandomImage(1);
-	document.getElementById("image_option_3").src = "assets/images/" + getRandomImage(2);
+	document.getElementById("image_option_1").src = "./static/assets/images/" + getRandomImage(0);
+	document.getElementById("image_option_2").src = "./static/assets/images/" + getRandomImage(1);
+	document.getElementById("image_option_3").src = "./static/assets/images/" + getRandomImage(2);
 	
 	document.getElementById("image_option_1").addEventListener("click", () => insertImage(document.getElementById("image_option_1")));
 	document.getElementById("image_option_2").addEventListener("click", () => insertImage(document.getElementById("image_option_2")));
@@ -78,9 +78,9 @@ function insertImage(img) {
 	});
 	$(".img-thumb").click(SetParameters);
 	
-	document.getElementById("image_option_1").src = "assets/images/" + getRandomImage(0);
-	document.getElementById("image_option_2").src = "assets/images/" + getRandomImage(1);
-	document.getElementById("image_option_3").src = "assets/images/" + getRandomImage(2);
+	document.getElementById("image_option_1").src = "./static/assets/images/" + getRandomImage(0);
+	document.getElementById("image_option_2").src = "./static/assets/images/" + getRandomImage(1);
+	document.getElementById("image_option_3").src = "./static/assets/images/" + getRandomImage(2);
 }
 
 var modal = document.getElementById("myModal"); // Pop up

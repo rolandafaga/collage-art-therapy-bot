@@ -1,0 +1,89 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [ "Hi", "Hey", "Is anyone there?", "Hello" ],
+      "responses": [ "Hello", "Hi", "Hi there" ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [ "Bye", "See you later", "Goodbye", "I will be going now" ],
+      "responses": [ "See you later", "Have a nice day", "Bye! Come back again" ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [ "Thanks", "Thank you", "That's helpful", "Thanks for the help" ],
+      "responses": [ "Any time.", "You're most welcome!" ]
+    },
+    {
+      "tag": "name",
+      "patterns": [ "what is your name", "what should I call you", "whats your name?", "Who are you?", "What are you?" ],
+      "responses": [ "You can call me Thoth.", "I'm Thoth!", "Just call me as Thoth" ]
+    },
+    {
+      "tag": "help",
+      "patterns": [ "Could you help me?", "give me a hand please", "Can you help?", "What can you do for me?", "I need support", "I need help", "support me please" ],
+      "responses": [ "Tell me how can assist you", "Tell me your problem to assist you", "Yes Sure, How can I support you" ]
+    },
+    {
+      "tag": "be there",
+      "patterns": [ "I should give up", "I should kill myself", "I feel nothing", "I lost", "I'm feeling lost", "I'm tired" ],
+      "responses": [ "I am sorry to hear that" ]
+    },
+    {
+      "tag": "not feeling well",
+      "patterns": [ "I don't feel well", "I'm feeling empty inside", "I'm sad today'" ],
+      "responses": [ "I know you probably don�t feel like it right now, but please go for a walk if you have the time.", "Please mention your complaint, we will reach you and sorry for any inconvenience caused" ]
+    },
+    {
+      "tag": "reason",
+      "patterns": [ "It makes me more happy", "It makes me happier" ],
+      "responses": [ "=)" ]
+    }
+
+  ],
+
+  "image_read": [
+    {
+      "tag": "greeting",
+      "patterns": [ "Hi", "Hey", "Is anyone there?", "Hello", "Hay" ],
+      "responses": [ "Hello", "Hi", "Hi there" ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [ "Bye", "See you later", "Goodbye", "I will be going now" ],
+      "responses": [ "See you later", "Have a nice day", "Bye! Come back again" ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [ "Thanks", "Thank you", "That's helpful", "Thanks for the help" ],
+      "responses": [ "Any time.", "You're most welcome!" ]
+    },
+    {
+      "tag": "name",
+      "patterns": [ "what is your name", "what should I call you", "whats your name?", "Who are you?", "What are you?" ],
+      "responses": [ "You can call me Thoth.", "I'm Thoth!", "Just call me as Thoth" ]
+    },
+    {
+      "tag": "help",
+      "patterns": [ "Could you help me?", "give me a hand please", "Can you help?", "What can you do for me?", "I need support", "I need help", "support me please" ],
+      "responses": [ "Tell me how can assist you", "Tell me your problem to assist you", "Yes Sure, How can I support you" ]
+    },
+    {
+      "tag": "be there",
+      "patterns": [ "I should give up", "I should kill myself", "I feel nothing", "I lost", "I'm feeling lost", "I'm tired" ],
+      "responses": [ "I am sorry to hear that" ]
+    },
+    {
+      "tag": "not feeling well",
+      "patterns": [ "I don't feel well", "I'm feeling empty inside", "I'm sad today'" ],
+      "responses": [ "I know you probably don�t feel like it right now, but please go for a walk if you have the time.", "Please mention your complaint, we will reach you and sorry for any inconvenience caused" ]
+    },
+    {
+      "tag": "reason",
+      "patterns": [ "It makes me more happy", "It makes me happier", "I lost", "I'm feeling lost", "I'm tired" ],
+      "responses": [ "I am sorry to hear that" ]
+    }
+
+  ]
+}

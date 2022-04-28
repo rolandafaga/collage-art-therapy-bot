@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="utf-8">
+	 <title>Collage Art Therapy Bot</title>
+	 <link rel="stylesheet" href="../static/assets/style/index.css" />
+	 <link rel="stylesheet" href="../static/assets/style/chatbot.css" />
+
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<section class="split left">
+		<div class="tile">
+			<h3>Upload your own images</h3>
+			<input type="file" id="files" name="files[]" multiple class="form-control"/>
+		</div>
+		
+		<div class="tile">
+			<h3>Choose one of the images below</h3>
+			<img class="gallery" id="image_option_1" src=""></img>
+			<img class="gallery" id="image_option_2" src=""></img>
+			<img class="gallery" id="image_option_3" src=""></img>
+		</div>
+		
+		<h1>Your Collage</h1>
+
+		<div class="container my-5" id="canvas">
+			<div id="collage"></div>
+		</div>	
+
+		<!-- Description Pop Up -->
+		<div id="myModal" class="modal">
+			<div class="modal-content">
+				<div class="modal-header">
+					<span class="close">&times;</span>
+					<h2 id="selected-img-label"></h2>
+				</div>
+				<div class="modal-body">
+					<img id="selected-img" src=""></img>
+					<div>
+						<label for="fname">How would you describe this image?</label><br>
+						<textarea name="fname" id="selected-img-desc"></textarea>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button id="modal-save"> Save </button>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<aside class="split right">
+		<h1 class="jumbotron text-center">AI Chatbot with Python</h1>
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-sm-6 offset-sm-3">
+	                <div id="chatbox" class="border border-success">
+	                    <p class="botText"><span>Hi! I'm Chatterbot</span></p>
+	                </div>
+	                <div id="userInput">
+	                    <input id="textInput" class="form-control" type="text" name="msg" placeholder="Type Your Message Here">
+	                    <input id="buttonInput" class="btn btn-success form-control" type="submit" value="Send">
+	                </div>
+	            </div>
+	        </div>
+	</aside>
+	
+	<script type="module" src="../static/assets/scripts/script.js"></script>
+	<script type="module" src="../static/assets/scripts/chatbot.js"></script>
+
+</body>

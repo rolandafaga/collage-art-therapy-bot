@@ -1,6 +1,6 @@
 body {
+       display: flex;
        font-family: 'Montserrat', sans-serif;
-       margin: 5em;
 }
 
 textarea {
@@ -17,10 +17,17 @@ label {
 
 .tile {
        margin: 20px 0px;
+       display: flex;
 }
 
+       .tile > img:nth-child(2) {
+              padding: 0 1em;
+       }
+
 .gallery {
-       width: 20em;
+       width: 33%;
+       height: auto;
+       object-fit: contain;
 }
 
 #canvas {
@@ -176,20 +183,26 @@ input[type='file'] {
 
 /* Split Screen Chatbot */
 .split {
-       height: 100%;
-       position: fixed;
-       z-index: 1;
+       height: 100vh;
        top: 0;
        overflow-x: hidden;
-       padding-top: 20px;
 }
 
 .left {
-       width: 70%;
+       width: 65%;
        left: 0;
 }
+
+       .left > div {
+              padding: 4em;
+       }
+       
 .right {
-       width: 30%;
+       width: 35%;
        right: 0;
        border-left: 5px solid black;
 }
+
+       .right > div {
+              padding: 4em 2em;
+       }

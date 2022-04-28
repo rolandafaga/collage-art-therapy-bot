@@ -1,17 +1,20 @@
 #textInput {
     border: none;
     border-bottom: 3px solid aqua;
+    padding: 0.5em;
+    width: 75%;
+    margin-right: 1em;
 }
 
 .userText {
-    color: white;
+    color: black;
     font-family: monospace;
     font-size: 17px;
     text-align: right;
     line-height: 30px;
 }
 .userText span {
-    background-color: #009688;
+    background-color: #eddea4;
     padding: 10px;
     border-radius: 2px;
 }
@@ -23,7 +26,7 @@
     line-height: 30px;
 }
 .botText span {
-    background-color: #EF5350;
+    background-color: #009688;
     padding: 10px;
     border-radius: 2px;
 }

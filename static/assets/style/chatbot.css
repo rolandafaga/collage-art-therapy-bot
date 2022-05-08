@@ -16,7 +16,7 @@
 .userText span {
     background-color: #eddea4;
     padding: 10px;
-    border-radius: 2px;
+    border-radius: 15px;
 }
 .botText {
     color: white;
@@ -28,5 +28,5 @@
 .botText span {
     background-color: #009688;
     padding: 10px;
-    border-radius: 2px;
+    border-radius: 15px;
 }

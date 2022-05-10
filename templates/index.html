@@ -25,6 +25,10 @@
 				<img class="gallery" id="image_option_3" src=""></img>
 			</div>
 			
+			<div>
+				<p> Want to reset the images? <a id="reset" href="#"> Click here to get a new set. </a> </p>
+			</div>
+			
 			<h1>Your Collage</h1>
 
 			<div class="container my-5" id="canvas">
@@ -42,8 +46,16 @@
 				<div class="modal-body">
 					<img id="selected-img" src=""></img>
 					<div>
-						<label for="fname">How would you describe this image?</label><br>
+						<label for="fname">How does this image make you feel?</label><br>
 						<textarea name="fname" id="selected-img-desc"></textarea>
+					
+					</br> <p> Change the image opacity </p>
+						<input type="radio" id="priority-1" name="priority" value="priority-1">
+						<label for="priority-1">100%</label><br>
+						<input type="radio" id="priority-2" name="priority" value="priority-2">
+						<label for="priority-2">75%</label><br>
+						<input type="radio" id="priority-3" name="priority" value="priority-3">
+						<label for="priority-3">50%</label>
 					</div>
 				</div>
 				<div class="modal-footer">

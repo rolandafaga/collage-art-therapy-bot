@@ -44,17 +44,30 @@ img:hover {
        column-gap: 0px;  
        border-radius: 30px;
        border: 5px solid #0FA3B1;
-       
        position: static;
        overflow: hidden;
 }
 
 #canvas img {
-       width: 100% !important;
+       width: 100%; 
        height: auto !important;
        position: static;
        overflow: hidden;
 }
+
+       .priority-1 {
+              opacity: 100%;
+       }
+       
+       .priority-2 {
+              -webkit-filter: brightness(60%);
+               filter:brightness(60%);
+        }
+       
+       .priority-3 {
+              -webkit-filter: brightness(40%);
+               filter:brightness(40%);
+        }
 
 .remove {
        position: relative;

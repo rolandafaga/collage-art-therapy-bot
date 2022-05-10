@@ -28,6 +28,12 @@ $(document).ready(function() {
 	document.getElementById("image_option_1").addEventListener("click", () => insertImage(document.getElementById("image_option_1")));
 	document.getElementById("image_option_2").addEventListener("click", () => insertImage(document.getElementById("image_option_2")));
 	document.getElementById("image_option_3").addEventListener("click", () => insertImage(document.getElementById("image_option_3")));
+	
+	document.getElementById("reset").addEventListener("click", () => {
+		document.getElementById("image_option_1").src = "./static/assets/images/" + getRandomImage(0);
+		document.getElementById("image_option_2").src = "./static/assets/images/" + getRandomImage(1);
+		document.getElementById("image_option_3").src = "./static/assets/images/" + getRandomImage(2);	
+	});
 		
 });
 
@@ -46,7 +52,6 @@ function getRandomImage(x) {
 			arr.push(r);
 		}
 	}
-	console.log (images[arr[x]]);
        return images[arr[x]];
 }
 
@@ -91,6 +96,13 @@ save.onclick = function() {
 	document.getElementById(currentImage).alt = document.getElementById("selected-img-desc").value;
 	modal.style.display = "none";
 	document.getElementById("selected-img-desc").value = "";
+	
+	var element = document.getElementsByName('priority');
+	for(var i = 0; i < element.length; i++) {
+		if(element[i].checked) {
+			document.getElementById(currentImage).classList.add(element[i].value);
+		}	
+	}
 }
 
 // Opens pop up with relevant information
@@ -100,10 +112,20 @@ function SetParameters () {
 	document.getElementById("selected-img").src = $(this).attr("src");
 	if (document.getElementById(currentImage).alt == "") {
 		document.getElementById("selected-img-desc").value = "";
-		console.log ("option 1");
 	} else {
 		document.getElementById("selected-img-desc").value = document.getElementById(currentImage).alt;
-		console.log ("option 2");
 	}
+	
+	$('input[name=priority]').attr('checked',false);
+	var element = document.getElementsByName('priority');
+	
+	if (document.getElementById(currentImage).classList.contains('priority-1')) {
+		document.getElementById("priority-1").checked = true;
+	} else if (document.getElementById(currentImage).classList.contains('priority-2')) {
+		document.getElementById("priority-2").checked = true;
+	} else if (document.getElementById(currentImage).classList.contains('priority-3')) {
+		document.getElementById("priority-3").checked = true;
+	}
+	
 	modal.style.display = "block";
 }

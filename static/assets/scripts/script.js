@@ -91,19 +91,11 @@ close.onclick = function(event) {
 	document.getElementById("selected-img-desc").value = "";
 }
 
-// Saves image desription as alt text for the image and updates the opacity
+// Saves image desription as alt text for the image
 save.onclick = function() {
 	document.getElementById(currentImage).alt = document.getElementById("selected-img-desc").value;
 	modal.style.display = "none";
 	document.getElementById("selected-img-desc").value = "";
-	
-	if (document.getElementById(currentImage).classList.contains('priority-1')) {
-		document.getElementById(currentImage).classList.remove('priority-1');
-	} else if (document.getElementById(currentImage).classList.contains('priority-2')) {
-		document.getElementById(currentImage).classList.remove('priority-2');
-	} else if (document.getElementById(currentImage).classList.contains('priority-3')) {
-		document.getElementById(currentImage).classList.remove('priority-3');
-	}
 	
 	var element = document.getElementsByName('priority');
 	for(var i = 0; i < element.length; i++) {
@@ -113,7 +105,7 @@ save.onclick = function() {
 	}
 }
 
-// Opens pop up with relevant information (image description, opacity)
+// Opens pop up with relevant information
 function SetParameters () {
 	currentImage = $(this).attr("id");
 	document.getElementById("selected-img-label").textContent = $(this).attr("id");

@@ -6,11 +6,6 @@
       "responses": [ "Hello", "Hi", "Hi there" ]
     },
     {
-      "tag": "goodbye",
-      "patterns": [ "Bye", "See you later", "Goodbye", "I will be going now" ],
-      "responses": [ "See you later", "Have a nice day", "Bye! Come back again" ]
-    },
-    {
       "tag": "thanks",
       "patterns": [ "Thanks", "Thank you", "That's helpful", "Thanks for the help" ],
       "responses": [ "Any time.", "You're most welcome!" ]
@@ -33,7 +28,185 @@
     {
       "tag": "not feeling well",
       "patterns": [ "I don't feel well", "I'm feeling empty inside", "I'm sad today'" ],
-      "responses": [ "I know you probably don�t feel like it right now, but please go for a walk if you have the time.", "Please mention your complaint, we will reach you and sorry for any inconvenience caused" ]
+      "responses": [ "I know you probably don�t feel like it right now, but please go for a walk if you have the time." ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [ "Bye", "See you later", "Goodbye", "I will be going now" ],
+      "responses": [
+        "Good luck out there! Our wounds are often the openings into the best and most beautiful parts of us.",
+        "Good luck out there! Life doesn�t make any sense without interdependence. We need each other, and the sooner we learn that, the better for us all.",
+        "Good luck out there. The shoe that fits one person pinches another; there is no one recipe for living that suits all cases."
+
+      ]
+    },
+    {
+      "tag": "angry",
+      "patterns": [
+        "angry1",
+        "angry2",
+        "angry3",
+        "angry4",
+        "angry5",
+        "angry6",
+        "angry7",
+        "angry8",
+        "angry9",
+        "angry10",
+        "angry11",
+        "angry12",
+        "angry13",
+        "angry14",
+        "angry15"
+      ],
+      "responses": [ "" ]
+    },
+    {
+      "tag": "crying",
+      "patterns": [
+        "crying1",
+        "crying2",
+        "crying3",
+        "crying4",
+        "crying5",
+        "crying6",
+        "crying7",
+        "crying8",
+        "crying9",
+        "crying10",
+        "crying11",
+        "crying12",
+        "crying13",
+        "crying14",
+        "crying15"
+      ],
+      "responses": [ "" ]
+    },
+    {
+      "tag": "sadness",
+      "patterns": [
+        "sadness1",
+        "sadness2",
+        "sadness3",
+        "sadness4",
+        "sadness5",
+        "sadness6",
+        "sadness7",
+        "sadness8",
+        "sadness9",
+        "sadness10",
+        "sadness11",
+        "sadness12",
+        "sadness13",
+        "sadness14",
+        "sadness15"
+      ],
+      "responses": [ "" ]
+    },
+    {
+      "tag": "smile",
+      "patterns": [
+        "smile1",
+        "smile2",
+        "smile3",
+        "smile4",
+        "smile5",
+        "smile6",
+        "smile7",
+        "smile8",
+        "smile9",
+        "smile10",
+        "smile11",
+        "smile12",
+        "smile13",
+        "smile14",
+        "smile15"
+      ],
+      "responses": [ "" ]
+    },
+    {
+      "tag": "stress",
+      "patterns": [
+        "stress1",
+        "stress2",
+        "stress3",
+        "stress4",
+        "stress5",
+        "stress6",
+        "stress7",
+        "stress8",
+        "stress9",
+        "stress10",
+        "stress11",
+        "stress12",
+        "stress13",
+        "stress14",
+        "stress15"
+      ],
+      "responses": [ "" ]
+    },
+    {
+      "tag": "smoking",
+      "patterns": [
+        "smoking1",
+        "smoking2",
+        "smoking3",
+        "smoking4",
+        "smoking5",
+        "smoking6",
+        "smoking7",
+        "smoking8",
+        "smoking9",
+        "smoking10",
+        "smoking11",
+        "smoking12",
+        "smoking13",
+        "smoking14",
+        "smoking15"
+      ],
+      "responses": [ "" ]
+    },
+    {
+      "tag": "tired",
+      "patterns": [
+        "tired1",
+        "tired2",
+        "tired3",
+        "tired4",
+        "tired5",
+        "tired6",
+        "tired7",
+        "tired8",
+        "tired9",
+        "tired10",
+        "tired11",
+        "tired12",
+        "tired13",
+        "tired14",
+        "tired15"
+      ],
+      "responses": [ "" ]
+    },
+    {
+      "tag": "workout",
+      "patterns": [
+        "workout1",
+        "workout2",
+        "workout3",
+        "workout4",
+        "workout5",
+        "workout6",
+        "workout7",
+        "workout8",
+        "workout9",
+        "workout10",
+        "workout11",
+        "workout12",
+        "workout13",
+        "workout14",
+        "workout15"
+      ],
+      "responses": [ "" ]
     },
     {
       "tag": "reason",
@@ -45,15 +218,11 @@
 
   "image_read": [
     {
-      "tag": "greeting",
-      "patterns": [ "Hi", "Hey", "Is anyone there?", "Hello", "Hay" ],
+      "tag": "posting",
+      "patterns": [ "What feelings come up as you look at the artwork?", "Hey", "Is anyone there?", "Hello", "Hay" ],
       "responses": [ "Hello", "Hi", "Hi there" ]
     },
-    {
-      "tag": "goodbye",
-      "patterns": [ "Bye", "See you later", "Goodbye", "I will be going now" ],
-      "responses": [ "See you later", "Have a nice day", "Bye! Come back again" ]
-    },
+    
     {
       "tag": "thanks",
       "patterns": [ "Thanks", "Thank you", "That's helpful", "Thanks for the help" ],

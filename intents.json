@@ -31,16 +31,6 @@
       "responses": [ "I know you probably don�t feel like it right now, but please go for a walk if you have the time." ]
     },
     {
-      "tag": "goodbye",
-      "patterns": [ "Bye", "See you later", "Goodbye", "I will be going now" ],
-      "responses": [
-        "Good luck out there! Our wounds are often the openings into the best and most beautiful parts of us.",
-        "Good luck out there! Life doesn�t make any sense without interdependence. We need each other, and the sooner we learn that, the better for us all.",
-        "Good luck out there. The shoe that fits one person pinches another; there is no one recipe for living that suits all cases."
-
-      ]
-    },
-    {
       "tag": "angry",
       "patterns": [
         "angry1",
@@ -212,6 +202,15 @@
       "tag": "reason",
       "patterns": [ "It makes me more happy", "It makes me happier" ],
       "responses": [ "=)" ]
+},    {
+      "tag": "goodbye",
+      "patterns": [ "Bye", "See you later", "Goodbye", "I will be going now" ],
+      "responses": [
+        "Good luck out there! Our wounds are often the openings into the best and most beautiful parts of us.",
+        "Good luck out there! Life doesn�t make any sense without interdependence. We need each other, and the sooner we learn that, the better for us all.",
+        "Good luck out there. The shoe that fits one person pinches another; there is no one recipe for living that suits all cases."
+
+      ]
     }
 
   ],

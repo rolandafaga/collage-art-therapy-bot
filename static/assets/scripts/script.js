@@ -69,6 +69,12 @@ function insertImage(img) {
 	});
 	$(".img-thumb").click(SetParameters);
 	
+	var filename = img.src.replace(/^.*[\\\/]/, '')
+	filename = filename.replace(/\.[^\/.]+$/, '');
+	document.getElementById("textInput").value = filename;
+	
+	document.getElementById("buttonInput").click();
+	
 	document.getElementById("image_option_1").src = "./static/assets/images/" + getRandomImage(0);
 	document.getElementById("image_option_2").src = "./static/assets/images/" + getRandomImage(1);
 	document.getElementById("image_option_3").src = "./static/assets/images/" + getRandomImage(2);

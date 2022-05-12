@@ -8,6 +8,7 @@ from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from sklearn.preprocessing import LabelEncoder
 import pickle
+import base64
 
 from imageai.Classification.Custom import ClassificationModelTrainer
 
@@ -64,7 +65,7 @@ model.summary()
 
 # set training
 
-EPOCHS = 1000
+EPOCHS = 400
 model.compile(loss='sparse_categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 history = model.fit(padded_sequences, np.array(training_labels), epochs=EPOCHS)
 
@@ -79,3 +80,4 @@ with open('tokenizer.pickle', 'wb') as handle:
 
 with open('label_encoder.pickle', 'wb') as ecn_file:
     pickle.dump(lbl_encoder, ecn_file, protocol=pickle.HIGHEST_PROTOCOL)
+

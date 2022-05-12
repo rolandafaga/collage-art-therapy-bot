@@ -125,7 +125,7 @@ def check():
             if i['tag']==category:
                 print(np.random.choice(i['responses']))
                 if i['tag']!='greeting' and i['tag']!='thanks' and i['tag']!='name' and i['tag']!='not feeling well':
-                    string = input('Enter: ')
+                    string = input('Response: ')
                 switch(i['tag'])
 
                 break

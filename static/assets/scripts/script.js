@@ -46,6 +46,11 @@ var images = [
 var responses = 0;
 var randomNumber;
 
+var modal = document.getElementById("myModal"); // Pop up
+var save = document.getElementById("modal-save"); // Save button
+var close = document.querySelector('.close'); // Close button
+var currentImage; // ID of the selected image
+
 $( '#buttonInput' ).click ( function () {
 	if (responses==0) {
 		document.getElementById("split-left").classList.add("requestResponse");
@@ -91,7 +96,7 @@ function getRandomID() {
 // Once image is selected from image options, inserts into collage and refreshes with three new image options
 function insertImage(img) {
 	var file = img;
-	
+
 	$("<div class=\"img-thumb-wrapper card shadow\"><span class=\"remove\">&times;</span>" + "<img id=\"image-" + getRandomID() + "\"class=\"img-thumb\" src=\"" + file.src + "\"/></div>").insertAfter("#collage");
 	$(".remove").click(function() {
 		$(this).parent(".img-thumb-wrapper").remove();
@@ -104,16 +109,12 @@ function insertImage(img) {
 	document.getElementById("buttonInput").click();
 	
 	document.getElementById("image-" + randomNumber).classList.add("current");
+	currentImage = "image-" + randomNumber;
 	
 	document.getElementById("image_option_1").src = "./static/assets/images/" + getRandomImage(0);
 	document.getElementById("image_option_2").src = "./static/assets/images/" + getRandomImage(1);
 	document.getElementById("image_option_3").src = "./static/assets/images/" + getRandomImage(2);
 }
-
-var modal = document.getElementById("myModal"); // Pop up
-var save = document.getElementById("modal-save"); // Save button
-var close = document.querySelector('.close'); // Close button
-var currentImage; // ID of the selected image
 
 // When the user clicks anywhere outside of the modal or the x button, close it
 window.onclick = function(event) {
@@ -132,6 +133,14 @@ save.onclick = function() {
 	document.getElementById(currentImage).alt = document.getElementById("selected-img-desc").value;
 	modal.style.display = "none";
 	document.getElementById("selected-img-desc").value = "";
+	
+	if (document.getElementById(currentImage).classList.contains('priority-1')) {
+		document.getElementById(currentImage).classList.remove('priority-1');
+	} else if (document.getElementById(currentImage).classList.contains('priority-2')) {
+		document.getElementById(currentImage).classList.remove('priority-2');
+	} else if (document.getElementById(currentImage).classList.contains('priority-3')) {
+		document.getElementById(currentImage).classList.remove('priority-3');
+	}
 	
 	var element = document.getElementsByName('priority');
 	for(var i = 0; i < element.length; i++) {

@@ -1,13 +1,21 @@
+var currentImage; 
+var responses = 0;
+
 function getResponse() {
-    let userText = $("#textInput").val();
-    let userHtml = '<p class="userText"><span>' + userText + '</span></p>';
-    $("#textInput").val("");
-    $("#chatbox").append(userHtml);
-    document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
-    $.get("/get", { msg: userText }).done(function(data) {
-    var botHtml = '<p class="botText"><span>' + data + '</span></p>';
-    $("#chatbox").append(botHtml);
-    document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+       let userText = $("#textInput").val();
+       let userHtml = '<p class="userText"><span>' + userText + '</span></p>';
+       
+       currentImage = $('.img-thumb').first().attr('id');
+       document.getElementById(currentImage).alt = userText;
+       
+       $("#textInput").val("");
+       $("#chatbox").append(userHtml);
+       document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+       $.get("/get", { msg: userText }).done(function(data) {       
+       var botHtml = '<p class="botText"><span>' + data + '</span></p>';
+       $("#chatbox").append(botHtml);
+       document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+
 });
 }
 $("#textInput").keypress(function(e) {

@@ -55,6 +55,11 @@ img:hover {
        overflow: hidden;
 }
 
+       .current {
+              position:fixed;
+              z-index: 1;
+       }
+
        .priority-1 {
               opacity: 100%;
        }
@@ -68,7 +73,7 @@ img:hover {
               -webkit-filter: brightness(40%);
                filter:brightness(40%);
         }
-
+        
 .remove {
        position: relative;
        color: transparent;
@@ -205,21 +210,29 @@ input[type='file'] {
        overflow-x: hidden;
 }
 
-.left {
-       width: 65%;
-       left: 0;
-}
-
-       .left > div {
-              padding: 4em;
+       .left {
+              width: 65%;
+              left: 0;
        }
-       
-.right {
-       width: 35%;
-       right: 0;
-       border-left: 5px solid black;
-}
 
-       .right > div {
-              padding: 4em 2em;
+              .left > div {
+                     padding: 4em;
+              }
+              
+       .right {
+              width: 35%;
+              right: 0;
+              border-left: 5px solid black;
        }
+
+              .right > div {
+                     padding: 4em 2em;
+              }
+
+.requestResponse {
+       background: rgba(0, 0, 0, 0.9);
+       opacity: 25%;
+       filter: alpha(opacity=25); /* in IE */
+       pointer-events: none;  
+       z-index: 2;
+}

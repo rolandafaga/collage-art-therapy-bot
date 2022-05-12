@@ -8,23 +8,16 @@ from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from sklearn.preprocessing import LabelEncoder
 import pickle
+import base64
 
 from imageai.Classification.Custom import ClassificationModelTrainer
 
-#model_trainer = ClassificationModelTrainer()
-#model_trainer.setModelTypeAsResNet50()
-#model_trainer.setDataDirectory("images")
-#model_trainer.trainModel(num_objects=10, num_experiments=500, enhance_data=True, batch_size=32, show_network_summary=True) # update num_objects later for more conditions
-
-
 with open('intents.json') as file:
     data = json.load(file)
-
 training_sentences = []
 training_labels = []
 labels = []
 responses = []
-
 
 for intent in data['intents']:
     for pattern in intent['patterns']:
@@ -64,7 +57,7 @@ model.summary()
 
 # set training
 
-EPOCHS = 1000
+EPOCHS = 400
 model.compile(loss='sparse_categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 history = model.fit(padded_sequences, np.array(training_labels), epochs=EPOCHS)
 
@@ -79,3 +72,4 @@ with open('tokenizer.pickle', 'wb') as handle:
 
 with open('label_encoder.pickle', 'wb') as ecn_file:
     pickle.dump(lbl_encoder, ecn_file, protocol=pickle.HIGHEST_PROTOCOL)
+

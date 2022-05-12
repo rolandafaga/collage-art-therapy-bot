@@ -16,20 +16,11 @@
       "responses": [ "You can call me Thoth.", "I'm Thoth!", "Just call me as Thoth" ]
     },
     {
-      "tag": "help",
-      "patterns": [ "Could you help me?", "give me a hand please", "Can you help?", "What can you do for me?", "I need support", "I need help", "support me please" ],
-      "responses": [ "Tell me how can assist you", "Tell me your problem to assist you", "Yes Sure, How can I support you" ]
-    },
-    {
-      "tag": "be there",
-      "patterns": [ "I should give up", "I should kill myself", "I feel nothing", "I lost", "I'm feeling lost", "I'm tired" ],
-      "responses": [ "I am sorry to hear that" ]
-    },
-    {
       "tag": "not feeling well",
-      "patterns": [ "I don't feel well", "I'm feeling empty inside", "I'm sad today'" ],
+      "patterns": [ "I don't feel well", "I'm feeling empty inside", "I'm sad today", "I feel nothing", "I'm feeling lost", "I'm tired" ],
       "responses": [ "I know you probably don�t feel like it right now, but please go for a walk if you have the time." ]
     },
+
     {
       "tag": "angry",
       "patterns": [
@@ -47,9 +38,153 @@
         "angry12",
         "angry13",
         "angry14",
-        "angry15"
+        "angry15",
+        "angry16",
+        "angry17",
+        "angry18",
+        "angry19",
+        "angry20"
       ],
-      "responses": [ "" ]
+      "responses": [ "What in that image made you want to select it?" ]
+    },
+    {
+      "tag": "basketball",
+      "patterns": [
+        "basketball1",
+        "basketball2",
+        "basketball3",
+        "basketball4",
+        "basketball5",
+        "basketball6",
+        "basketball7",
+        "basketball8",
+        "basketball9",
+        "basketball10",
+        "basketball11",
+        "basketball12",
+        "basketball13",
+        "basketball14",
+        "basketball15",
+        "basketball16",
+        "basketball17",
+        "basketball18",
+        "basketball19",
+        "basketball20"
+      ],
+      "responses": [ "What in that image made you want to select it?" ]
+    },
+    {
+      "tag": "beach",
+      "patterns": [
+        "beach1",
+        "beach2",
+        "beach3",
+        "beach4",
+        "beach5",
+        "beach6",
+        "beach7",
+        "beach8",
+        "beach9",
+        "beach10",
+        "beach11",
+        "beach12",
+        "beach13",
+        "beach14",
+        "beach15",
+        "beach16",
+        "beach17",
+        "beach18",
+        "beach19",
+        "beach20"
+      ],
+      "responses": [ "What in that image made you want to select it?" ]
+    },
+    {
+      "tag": "car",
+      "patterns": [
+        "car1",
+        "car2",
+        "car3",
+        "car4",
+        "car5",
+        "car6",
+        "car7",
+        "car8",
+        "car9",
+        "car10",
+        "car11",
+        "car12",
+        "car13",
+        "car14",
+        "car15",
+        "car16",
+        "car17",
+        "car18",
+        "car19",
+        "car20",
+        "car21",
+        "car22",
+        "car23",
+        "car24",
+        "car25",
+        "car26",
+        "car27"
+      ],
+      "responses": [ "What in that image made you want to select it?" ]
+    },
+    {
+      "tag": "cat",
+      "patterns": [
+        "cat1",
+        "cat2",
+        "cat3",
+        "cat4",
+        "cat5",
+        "cat6",
+        "cat7",
+        "cat8",
+        "cat9",
+        "cat10",
+        "cat11",
+        "cat12",
+        "cat13",
+        "cat14",
+        "cat15",
+        "cat16",
+        "cat17",
+        "cat18",
+        "cat19",
+        "cat20"
+      ],
+      "responses": [ "What in that image made you want to select it?" ]
+    },
+    {
+      "tag": "cooking",
+      "patterns": [
+        "cooking1",
+        "cooking2",
+        "cooking3",
+        "cooking4",
+        "cooking5",
+        "cooking6",
+        "cooking7",
+        "cooking8",
+        "cooking9",
+        "cooking10",
+        "cooking11",
+        "cooking12",
+        "cooking13",
+        "cooking14",
+        "cooking15",
+        "cooking16",
+        "cooking17",
+        "cooking18",
+        "cooking19",
+        "cooking20",
+        "cooking21",
+        "cooking22"
+      ],
+      "responses": [ "What in that image made you want to select it?" ]
     },
     {
       "tag": "crying",
@@ -68,9 +203,441 @@
         "crying12",
         "crying13",
         "crying14",
-        "crying15"
+        "crying15",
+        "crying16",
+        "crying17",
+        "crying18",
+        "crying19",
+        "crying20"
       ],
-      "responses": [ "" ]
+      "responses": [ "What in that image made you want to select it?" ]
+    },
+    {
+      "tag": "dance",
+      "patterns": [
+        "dance1",
+        "dance2",
+        "dance3",
+        "dance4",
+        "dance5",
+        "dance6",
+        "dance7",
+        "dance8",
+        "dance9",
+        "dance10",
+        "dance11",
+        "dance12",
+        "dance13",
+        "dance14",
+        "dance15",
+        "dance16",
+        "dance17",
+        "dance18",
+        "dance19",
+        "dance20",
+        "dance21",
+        "dance22",
+        "dance23",
+        "dance24",
+        "dance25",
+        "dance26"
+      ],
+      "responses": [ "What in that image made you want to select it?" ]
+    },
+    {
+      "tag": "dog",
+      "patterns": [
+        "dog1",
+        "dog2",
+        "dog3",
+        "dog4",
+        "dog5",
+        "dog6",
+        "dog7",
+        "dog8",
+        "dog9",
+        "dog10",
+        "dog11",
+        "dog12",
+        "dog13",
+        "dog14",
+        "dog15",
+        "dog16",
+        "dog17",
+        "dog18",
+        "dog19",
+        "dog20"
+      ],
+      "responses": [ "What in that image made you want to select it?" ]
+    },
+    {
+      "tag": "drinking",
+      "patterns": [
+        "drinking1",
+        "drinking2",
+        "drinking3",
+        "drinking4",
+        "drinking5",
+        "drinking6",
+        "drinking7",
+        "drinking8",
+        "drinking9",
+        "drinking10",
+        "drinking11",
+        "drinking12",
+        "drinking13",
+        "drinking14",
+        "drinking15",
+        "drinking16",
+        "drinking17",
+        "drinking18",
+        "drinking19",
+        "drinking20",
+        "drinking21",
+        "drinking22",
+        "drinking23",
+        "drinking24",
+        "drinking25",
+        "drinking26"
+      ],
+      "responses": [ "What in that image made you want to select it?" ]
+    },
+    {
+      "tag": "family",
+      "patterns": [
+        "family1",
+        "family2",
+        "family3",
+        "family4",
+        "family5",
+        "family6",
+        "family7",
+        "family8",
+        "family9",
+        "family10",
+        "family11",
+        "family12",
+        "family13",
+        "family14",
+        "family15",
+        "family16",
+        "family17",
+        "family18",
+        "family19",
+        "family20",
+        "family21"
+      ],
+      "responses": [ "What in that image made you want to select it?" ]
+    },
+    {
+      "tag": "food",
+      "patterns": [
+        "food1",
+        "food2",
+        "food3",
+        "food4",
+        "food5",
+        "food6",
+        "food7",
+        "food8",
+        "food9",
+        "food10",
+        "food11",
+        "food12",
+        "food13",
+        "food14",
+        "food15",
+        "food16",
+        "food17",
+        "food18",
+        "food19",
+        "food20",
+        "food21",
+        "food22",
+        "food23",
+        "food24",
+        "food25"
+      ],
+      "responses": [ "What in that image made you want to select it?" ]
+    },
+    {
+      "tag": "home",
+      "patterns": [
+        "home1",
+        "home2",
+        "home3",
+        "home4",
+        "home5",
+        "home6",
+        "home7",
+        "home8",
+        "home9",
+        "home10",
+        "home11",
+        "home12",
+        "home13",
+        "home14",
+        "home15",
+        "home16",
+        "home17",
+        "home18",
+        "home19",
+        "home20"
+      ],
+      "responses": [ "What in that image made you want to select it?" ]
+    },
+    {
+      "tag": "jewelry",
+      "patterns": [
+        "jewelry1",
+        "jewelry2",
+        "jewelry3",
+        "jewelry4",
+        "jewelry5",
+        "jewelry6",
+        "jewelry7",
+        "jewelry8",
+        "jewelry9",
+        "jewelry10",
+        "jewelry11",
+        "jewelry12",
+        "jewelry13",
+        "jewelry14",
+        "jewelry15",
+        "jewelry16",
+        "jewelry17",
+        "jewelry18",
+        "jewelry19",
+        "jewelry20",
+        "jewelry21",
+        "jewelry22",
+        "jewelry23",
+        "jewelry24"
+      ],
+      "responses": [ "What in that image made you want to select it?" ]
+    },
+    {
+      "tag": "love",
+      "patterns": [
+        "love1",
+        "love2",
+        "love3",
+        "love4",
+        "love5",
+        "love6",
+        "love7",
+        "love8",
+        "love9",
+        "love10",
+        "love11",
+        "love12",
+        "love13",
+        "love14",
+        "love15",
+        "love16",
+        "love17",
+        "love18",
+        "love19",
+        "love20",
+        "love21",
+        "love22",
+        "love23",
+        "love24"
+      ],
+      "responses": [ "What in that image made you want to select it?" ]
+    },
+    {
+      "tag": "makeup",
+      "patterns": [
+        "makeup1",
+        "makeup2",
+        "makeup3",
+        "makeup4",
+        "makeup5",
+        "makeup6",
+        "makeup7",
+        "makeup8",
+        "makeup9",
+        "makeup10",
+        "makeup11",
+        "makeup12",
+        "makeup13",
+        "makeup14",
+        "makeup15",
+        "makeup16",
+        "makeup17",
+        "makeup18",
+        "makeup19",
+        "makeup20",
+        "makeup21"
+      ],
+      "responses": [ "What in that image made you want to select it?" ]
+    },
+    {
+      "tag": "marriage",
+      "patterns": [
+        "marriage1",
+        "marriage2",
+        "marriage3",
+        "marriage4",
+        "marriage5",
+        "marriage6",
+        "marriage7",
+        "marriage8",
+        "marriage9",
+        "marriage10",
+        "marriage11",
+        "marriage12",
+        "marriage13",
+        "marriage14",
+        "marriage15",
+        "marriage16",
+        "marriage17",
+        "marriage18",
+        "marriage19",
+        "marriage20",
+        "marriage21",
+        "marriage22"
+      ],
+      "responses": [ "What in that image made you want to select it?" ]
+    },
+    {
+      "tag": "money",
+      "patterns": [
+        "money1",
+        "money2",
+        "money3",
+        "money4",
+        "money5",
+        "money6",
+        "money7",
+        "money8",
+        "money9",
+        "money10",
+        "money11",
+        "money12",
+        "money13",
+        "money14",
+        "money15",
+        "money16",
+        "money17",
+        "money18",
+        "money19",
+        "money20",
+        "money21",
+        "money22",
+        "money23",
+        "money24",
+        "money25"
+      ],
+      "responses": [ "What in that image made you want to select it?" ]
+    },
+    {
+      "tag": "music",
+      "patterns": [
+        "music1",
+        "music2",
+        "music3",
+        "music4",
+        "music5",
+        "music6",
+        "music7",
+        "music8",
+        "music9",
+        "music10",
+        "music11",
+        "music12",
+        "music13",
+        "music14",
+        "music15",
+        "music16",
+        "music17",
+        "music18",
+        "music19",
+        "music20",
+        "music21",
+        "music22"
+      ],
+      "responses": [ "What in that image made you want to select it?" ]
+    },
+    {
+      "tag": "plane",
+      "patterns": [
+        "plane1",
+        "plane2",
+        "plane3",
+        "plane4",
+        "plane5",
+        "plane6",
+        "plane7",
+        "plane8",
+        "plane9",
+        "plane10",
+        "plane11",
+        "plane12",
+        "plane13",
+        "plane14",
+        "plane15",
+        "plane16",
+        "plane17",
+        "plane18",
+        "plane19",
+        "plane20",
+        "plane21"
+      ],
+      "responses": [ "What in that image made you want to select it?"]
+    },
+    {
+      "tag": "rain",
+      "patterns": [
+        "rain1",
+        "rain2",
+        "rain3",
+        "rain4",
+        "rain5",
+        "rain6",
+        "rain7",
+        "rain8",
+        "rain9",
+        "rain10",
+        "rain11",
+        "rain12",
+        "rain13",
+        "rain14",
+        "rain15",
+        "rain16",
+        "rain17",
+        "rain18",
+        "rain19",
+        "rain20"
+      ],
+      "responses": [ "What in that image made you want to select it?", "What does the rain make you feel?" ]
+    },
+    {
+      "tag": "rose",
+      "patterns": [
+        "rose1",
+        "rose2",
+        "rose3",
+        "rose4",
+        "rose5",
+        "rose6",
+        "rose7",
+        "rose8",
+        "rose9",
+        "rose10",
+        "rose11",
+        "rose12",
+        "rose13",
+        "rose14",
+        "rose15",
+        "rose16",
+        "rose17",
+        "rose18",
+        "rose19",
+        "rose20"
+      ],
+      "responses": [ "What in that image made you want to select it?" ]
     },
     {
       "tag": "sadness",
@@ -89,9 +656,40 @@
         "sadness12",
         "sadness13",
         "sadness14",
-        "sadness15"
+        "sadness15",
+        "sadness16",
+        "sadness17",
+        "sadness18",
+        "sadness19",
+        "sadness20"
       ],
-      "responses": [ "" ]
+      "responses": [ "What in that image made you want to select it?" ]
+    },
+    {
+      "tag": "school",
+      "patterns": [
+        "school1",
+        "school2",
+        "school3",
+        "school4",
+        "school5",
+        "school6",
+        "school7",
+        "school8",
+        "school9",
+        "school10",
+        "school11",
+        "school12",
+        "school13",
+        "school14",
+        "school15",
+        "school16",
+        "school17",
+        "school18",
+        "school19",
+        "school20"
+      ],
+      "responses": [ "What in that image made you want to select it?", "How do you feel about school?" ]
     },
     {
       "tag": "smile",
@@ -110,9 +708,14 @@
         "smile12",
         "smile13",
         "smile14",
-        "smile15"
+        "smile15",
+        "smile16",
+        "smile17",
+        "smile18",
+        "smile19",
+        "smile20"
       ],
-      "responses": [ "" ]
+      "responses": [ "What in that image made you want to select it?", "What about this image makes you smile?" ]
     },
     {
       "tag": "stress",
@@ -131,9 +734,14 @@
         "stress12",
         "stress13",
         "stress14",
-        "stress15"
+        "stress15",
+        "stress16",
+        "stress17",
+        "stress18",
+        "stress19",
+        "stress20"
       ],
-      "responses": [ "" ]
+      "responses": [ "What in that image made you want to select it?", "How often do you think you get stressed out nowadays?"]
     },
     {
       "tag": "smoking",
@@ -152,9 +760,85 @@
         "smoking12",
         "smoking13",
         "smoking14",
-        "smoking15"
+        "smoking15",
+        "smoking16",
+        "smoking17",
+        "smoking18",
+        "smoking19",
+        "smoking20",
+        "smoking21",
+        "smoking22",
+        "smoking23",
+        "smoking24",
+        "smoking25",
+        "smoking26",
+        "smoking27",
+        "smoking28",
+        "smoking29",
+        "smoking30",
+        "smoking31",
+        "smoking32"
       ],
-      "responses": [ "" ]
+      "responses": [ "What in that image made you want to select it?", "Have you had an experience with smoking?" ]
+    },
+    {
+      "tag": "sunshine",
+      "patterns": [
+        "sunshine1",
+        "sunshine2",
+        "sunshine3",
+        "sunshine4",
+        "sunshine5",
+        "sunshine6",
+        "sunshine7",
+        "sunshine8",
+        "sunshine9",
+        "sunshine10",
+        "sunshine11",
+        "sunshine12",
+        "sunshine13",
+        "sunshine14",
+        "sunshine15",
+        "sunshine16",
+        "sunshine17",
+        "sunshine18",
+        "sunshine19",
+        "sunshine20",
+        "sunshine21",
+        "sunshine22"
+      ],
+      "responses": [ "What in that image made you want to select it?" ]
+    },
+    {
+      "tag": "technology",
+      "patterns": [
+        "technology1",
+        "technology2",
+        "technology3",
+        "technology4",
+        "technology5",
+        "technology6",
+        "technology7",
+        "technology8",
+        "technology9",
+        "technology10",
+        "technology11",
+        "technology12",
+        "technology13",
+        "technology14",
+        "technology15",
+        "technology16",
+        "technology17",
+        "technology18",
+        "technology19",
+        "technology20",
+        "technology21",
+        "technology22",
+        "technology23",
+        "technology24",
+        "technology25"
+      ],
+      "responses": [ "What in that image made you want to select it?" ]
     },
     {
       "tag": "tired",
@@ -173,9 +857,14 @@
         "tired12",
         "tired13",
         "tired14",
-        "tired15"
+        "tired15",
+        "tired16",
+        "tired17",
+        "tired18",
+        "tired19",
+        "tired20"
       ],
-      "responses": [ "" ]
+      "responses": [ "What in that image made you want to select it?" ]
     },
     {
       "tag": "workout",
@@ -194,63 +883,24 @@
         "workout12",
         "workout13",
         "workout14",
-        "workout15"
+        "workout15",
+        "workout16",
+        "workout17",
+        "workout18",
+        "workout19",
+        "workout20"
       ],
-      "responses": [ "" ]
+      "responses": [ "What in that image made you want to select it?" ]
     },
     {
-      "tag": "reason",
-      "patterns": [ "It makes me more happy", "It makes me happier" ],
-      "responses": [ "=)" ]
-},    {
       "tag": "goodbye",
-      "patterns": [ "Bye", "See you later", "Goodbye", "I will be going now" ],
+      "patterns": [ "Finished", "My collage is finished", "My collage is done", "I'm done now" ],
       "responses": [
         "Good luck out there! Our wounds are often the openings into the best and most beautiful parts of us.",
         "Good luck out there! Life doesn�t make any sense without interdependence. We need each other, and the sooner we learn that, the better for us all.",
         "Good luck out there. The shoe that fits one person pinches another; there is no one recipe for living that suits all cases."
 
       ]
-    }
-
-  ],
-
-  "image_read": [
-    {
-      "tag": "posting",
-      "patterns": [ "What feelings come up as you look at the artwork?", "Hey", "Is anyone there?", "Hello", "Hay" ],
-      "responses": [ "Hello", "Hi", "Hi there" ]
-    },
-    
-    {
-      "tag": "thanks",
-      "patterns": [ "Thanks", "Thank you", "That's helpful", "Thanks for the help" ],
-      "responses": [ "Any time.", "You're most welcome!" ]
-    },
-    {
-      "tag": "name",
-      "patterns": [ "what is your name", "what should I call you", "whats your name?", "Who are you?", "What are you?" ],
-      "responses": [ "You can call me Thoth.", "I'm Thoth!", "Just call me as Thoth" ]
-    },
-    {
-      "tag": "help",
-      "patterns": [ "Could you help me?", "give me a hand please", "Can you help?", "What can you do for me?", "I need support", "I need help", "support me please" ],
-      "responses": [ "Tell me how can assist you", "Tell me your problem to assist you", "Yes Sure, How can I support you" ]
-    },
-    {
-      "tag": "be there",
-      "patterns": [ "I should give up", "I should kill myself", "I feel nothing", "I lost", "I'm feeling lost", "I'm tired" ],
-      "responses": [ "I am sorry to hear that" ]
-    },
-    {
-      "tag": "not feeling well",
-      "patterns": [ "I don't feel well", "I'm feeling empty inside", "I'm sad today'" ],
-      "responses": [ "I know you probably don�t feel like it right now, but please go for a walk if you have the time.", "Please mention your complaint, we will reach you and sorry for any inconvenience caused" ]
-    },
-    {
-      "tag": "reason",
-      "patterns": [ "It makes me more happy", "It makes me happier", "I lost", "I'm feeling lost", "I'm tired" ],
-      "responses": [ "I am sorry to hear that" ]
     }
 
   ]

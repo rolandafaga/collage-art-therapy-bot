@@ -31,6 +31,7 @@ options = {
     "tir" : 0,
     "wor" : 0
 }
+responses = 0
 
 def angry():
     global options
@@ -83,36 +84,42 @@ def switch(val):
 def index():
     return render_template("index.html")
 
-@app.route("/get")
+@app.route("/get")  
 
 #function for the bot response
 def get_bot_response():
+    global responses
     userText = request.args.get('msg')
-    # return str(englishBot.get_response(userText))
     result = model.predict(pad_sequences(tokenizer.texts_to_sequences([userText]), truncating='post', maxlen=max_len))
     category = lbl_encoder.inverse_transform([np.argmax(result)]) # labels[np.argmax(result)]
     for i in data['intents']:
-        if i['tag']=='goodbye': 
+        if i['tag']=='goodbye' or 'done' in userText or 'finished' in userText:
+            responses = 2 
             conclusion = max(options, key= lambda x: options[x])
             if conclusion == "ang":
-                return("You might be interested in knowing about CBT, or cognitive behavioral therapy.\n\nThere are certain cognitive distortions including irrational patterns of thinking. Here are a few:\nAll-or-Nothing thinking: ")
+                return("I've noticed a pattern of anger in your collage! You might be interested in knowing about CBT, or cognitive behavioral therapy. CBT is a solution oriented form of therapy that teaches how to identify negative feelings, do a reality-check, then challenge and replace them with more rational thoughts.\nExcessive anger can take a toll on your mental health, physical health, relationships, and career. If you feel overwhelmed by anger, don’t hesitate to reach out and get help. CBT for anger management is structured, directive and can teach you coping strategies to manage triggers in an adaptive way. Remember, anger should not be suppressed. Rather, it should be communicated in an assertive, healthy way.")
             if conclusion == "crying":
-                return("You might be interested in knowing about CBT, or cognitive behavioral therapy.\n\nThere are certain cognitive distortions including irrational patterns of thinking. Here are a few:\nAll-or-Nothing thinking: ")
+                return("You might be interested in knowing about CBT, or cognitive behavioral therapy.\nThere are certain cognitive distortions including irrational patterns of thinking. Here are a few:\nAll-or-Nothing thinking: ")
             if conclusion == "sad":
-                return("You might be interested in knowing about CBT, or cognitive behavioral therapy.\n\nThere are certain cognitive distortions including irrational patterns of thinking. Here are a few:\nAll-or-Nothing thinking: ")
+                return("If you are feeling sadness or stress as of recent: a reminder that talking with a loved one, taking proper nutrition, physical exercise, breathing exercises, or listening to positive music are some ways to see at least some glimmers of living.\nIf it gets worse, please contact a qualified local therapist that can help you develop effective coping skills for sadness and other emotions.")
             if conclusion == "smi":
-                return("You might be interested in knowing about CBT, or cognitive behavioral therapy.\n\nThere are certain cognitive distortions including irrational patterns of thinking. Here are a few:\nAll-or-Nothing thinking: ")
+                return("You might be interested in knowing about CBT, or cognitive behavioral therapy.\nThere are certain cognitive distortions including irrational patterns of thinking. Here are a few:\nAll-or-Nothing thinking: ")
             if conclusion == "str":
-                return("You might be interested in knowing about CBT, or cognitive behavioral therapy.\n\nThere are certain cognitive distortions including irrational patterns of thinking. Here are a few:\nAll-or-Nothing thinking: ")
+                return("You might be interested in knowing about CBT, or cognitive behavioral therapy.\nThere are certain cognitive distortions including irrational patterns of thinking. Here are a few:\nAll-or-Nothing thinking: ")
             if conclusion == "smo":
-                return("You might be interested in knowing about CBT, or cognitive behavioral therapy.\n\nThere are certain cognitive distortions including irrational patterns of thinking. Here are a few:\nAll-or-Nothing thinking: ")
+                return("You might be interested in knowing about CBT, or cognitive behavioral therapy.\nThere are certain cognitive distortions including irrational patterns of thinking. Here are a few:\nAll-or-Nothing thinking: ")
             if conclusion == "tir":
-                return("You might be interested in knowing about CBT, or cognitive behavioral therapy.\n\nThere are certain cognitive distortions including irrational patterns of thinking. Here are a few:\nAll-or-Nothing thinking: ")
+                return("You might be interested in knowing about CBT, or cognitive behavioral therapy.\nThere are certain cognitive distortions including irrational patterns of thinking. Here are a few:\nAll-or-Nothing thinking: ")
             if conclusion == "wor":
-                return("You might be interested in knowing about CBT, or cognitive behavioral therapy.\n\nThere are certain cognitive distortions including irrational patterns of thinking. Here are a few:\nAll-or-Nothing thinking: ")
+                return("You might be interested in knowing about CBT, or cognitive behavioral therapy.\nThere are certain cognitive distortions including irrational patterns of thinking. Here are a few:\nAll-or-Nothing thinking: ")
         if i['tag']==category:
-            switch(i['tag'])
-            return(np.random.choice(i['responses']))   
+            if responses == 0:
+                switch(i['tag'])
+                responses = 1
+                return(np.random.choice(i['responses']))   
+            if responses == 1:
+                responses = 0
+                return
 
 if __name__ == "__main__":
     app.run(host="localhost", port=8000, debug=True)
